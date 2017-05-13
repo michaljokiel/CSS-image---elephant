@@ -1,0 +1,364 @@
+body {
+  background: #cfe0e8;
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+.sun {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: -200px;
+  left: -400px;
+  background: #cc6600;
+  background: -webkit-radial-gradient(#cc6600, #ff8000, #ffa64d, #ffcc99); /* Safari */
+  background: -o-radial-gradient(#cc6600, #ff8000, #ffa64d, #ffcc99); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#cc6600, #ff8000, #ffa64d, #ffcc99); /* Firefox 3.6 to 15 */
+  background: radial-gradient(#cc6600, #ff8000, #ffa64d, #ffcc99); /* Stadardpyntx */  border-radius: 50%;
+  z-index: 0;
+  -webkit-animation-name: sun-animation;
+  -webkit-animation-duration: 8s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: sun-animation;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.box {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background: #cfe0e8;
+  margin: auto;
+  top: 30px;
+}
+.road {
+  position: absolute;
+  width: 600px;
+  height: 200px;
+  top: 400px;
+  background: #588c7e;
+  border-radius: 40%;
+  z-index: 1;
+}
+.elephant-body {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #b2b2b2;
+  border-radius: 50%;
+  bottom: 100px;
+  left: 150px;
+  z-index: 1;
+}   
+.elephant-head {
+  position: absolute;
+  width: 250px;
+  height: 290px;
+  background: #b2b2b2;
+  border-radius: 40%;
+  border: 1px solid #e0e2e4;  /* lekko szary kolor obramowania*/
+  top: 80px;
+  left: 175px;
+  z-index: 3;
+}
+.elephant-head-copy {
+  position: absolute;
+  width: 250px;
+  height: 290px;
+  background: #b2b2b2;
+  border-radius: 40%;
+}
+.elephant-ear-left {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  background: white;
+  top: 30px;
+  left: 10px;
+  z-index: 2;
+}
+.elephant-ear-right {
+  position: absolute;
+  width: 250px;
+  height: 350px;
+  background: blue;
+  top: 30px;
+  right: 10px;
+  z-index: 2;
+}
+.elephant-ear-left1 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #b2b2b2;
+  left: 10px;
+  top: -20px;
+  border-radius: 40%;
+  z-index: 2;
+  -webkit-animation-name: head-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: head-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.elephant-ear-left2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #b2b2b2;
+  top: 150px;
+  left: 60px;
+  border-radius: 40%;
+  border-bottom: 1px solid #e0e2e4;
+  border-right: 1px solid #e0e2e4;
+  z-index: 2;
+  -webkit-animation-name: head-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: head-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.elephant-ear-right1 {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: #b2b2b2;
+  right: 10px;
+  top: -20px;
+  border-radius: 40%;
+  z-index: 2;
+  -webkit-animation-name: head-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: head-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.elephant-ear-right2 {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #b2b2b2;
+  top: 150px;
+  right: 60px;
+  border-radius: 40%;
+  border-bottom: 1px solid #e0e2e4;
+  border-left: 1px solid #e0e2e4;
+  z-index: 2;
+  -webkit-animation-name: head-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: head-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.elephant-trunk {
+  position: absolute;
+  width: 60px;
+  height: 200px;
+  background: #b2b2b2;
+  border: 1px solid #e0e2e4;  /* lekko szary kolor obramowania*/
+  border-top: #b2b2b2;
+  border-radius: 0px 0px 20px 20px;
+  top: 250px;
+  left: 270px;
+  z-index: 4;
+}
+.elephant-horn-left {
+  position: absolute;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 120px solid #f4e1d2;
+  margin: 40px auto 0;
+  transform: rotate(10deg);
+  z-index: 3;
+
+}
+.elephant-horn-right {
+  position: absolute;
+  top: 250px;
+  right: 250px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 120px solid #f4e1d2;
+  margin: 40px auto 0;
+  transform: rotate(-10deg);
+  z-index: 3;
+}
+.elephant-foot-left {
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  bottom: 50px;
+  left: 130px;
+  background: #b2b2b2;
+  border: 1px solid #e0e2e4;  /* lekko szary kolor obramowania*/
+  border-radius: 50% 50% 0% 0%;
+  z-index: 3;
+  -webkit-animation-name: foot-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: foot-animation;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.elephant-foot-right {
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  bottom: 50px;
+  right: 130px;
+  background: #b2b2b2;
+  border: 1px solid #e0e2e4;  /* lekko szary kolor obramowania*/
+  border-radius: 50% 50% 0% 0%;
+  z-index: 3;
+  -webkit-animation-name: foot-animation;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: foot-animation;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+.elephant-finger-1 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  bottom: 0px;
+  left:5px;
+  background: #e4d1d1;
+  border: 1px solid #e0e2e4;
+  border-radius: 50% 50% 0% 0%;
+}
+.elephant-finger-2 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  bottom: 0px;
+  left: 55px;
+  background: #e4d1d1;
+  border: 1px solid #e0e2e4;
+  border-radius: 50% 50% 0% 0%;
+}
+.elephant-finger-3 {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  bottom: 0px;
+  right: 5px;
+  background: #e4d1d1;
+  border: 1px solid #e0e2e4;
+  border-radius: 50% 50% 0% 0%;
+}
+.elephant-eye-left {
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  top: 70px;
+  left: 25px;
+  background: #1a1a1a;
+  border: 1px solid #e0e2e4;
+  border-radius: 50%;
+  z-index: 4;
+}
+.elephant-eye-right {
+  position: absolute;
+  height: 100px;
+  width: 80px;
+  top: 70px;
+  right: 25px;
+  background: #1a1a1a;
+  border: 1px solid #e0e2e4;
+  border-radius: 50%;
+  z-index: 4;
+}
+.elephant-eye-part1 {
+  position: absolute;
+  height: 60px;
+  width: 50px;
+  top: 10px;
+  left: 15px;
+  background: white;
+  border-radius: 50%;
+  z-index: 4;
+}
+.elephant-eye-part2 {
+  position: absolute;
+  height: 20px;
+  width: 30px;
+  top: 75px;
+  right: 25px;
+  background: white;
+  border-radius: 50%;
+  z-index: 4;
+}
+.elephant-eye-part3 {
+  position: absolute;
+  height: 20px;
+  width: 15px;
+  top: 55px;
+  right: 5px;
+  background: white;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.footer {
+  position: absolute;
+  width: 250px;
+  height: 50px;
+  botton: 10px;
+  right: 400px;
+}
+#footer-name {
+  font-size: 2em; 
+  font-family: 'Qwigley', cursive;
+}
+#footer {
+  font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+@-webkit-keyframes foot-animation {
+  0%   {bottom: 50px;}
+  50%  {bottom: 100px;}
+  100% {bottom: 50px;}
+}
+keyframes foot-animation {
+  0%   {bottom: 50px;}
+  50%  {bottom: 100px;}
+  100% {bottom: 50px;}
+}
+
+@-webkit-keyframes head-animation {
+  0%   {bottom: 50px; -webkit-transform: skewX(10deg);}
+  50%  {bottom: 100px; -webkit-transform: skewX(-10deg);}
+  100% {bottom: 50px; -webkit-transform: skewX(10deg);}
+}
+keyframes head-animation {
+  0%   {bottom: 50px; transform: skewX(10deg);}
+  50%  {bottom: 100px; transform: skewX(-10deg);}
+  100% {bottom: 50px; transform: skewX(10deg);}
+}
+
+@-webkit-keyframes sun-animation {
+  0%   {box-shadow: 1px 1px 1px 1px #ffe6cc;}
+  50%  {box-shadow: 30px 30px 30px 30px #ffd9b3;}
+  100% {box-shadow: 1px 1px 1px 1px #ffe6cc;}
+}
+keyframes sun-animation {
+  0%   {box-shadow: 1px 1px 1px 1px #ffe6cc;}
+  50%  {box-shadow: 30px 30px 30px 30px #ffd9b3;}
+  100% {box-shadow: 1px 1px 1px 1px #ffe6cc;}
+}
